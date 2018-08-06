@@ -1,3 +1,17 @@
+body {
+   background-color: lightgray;
+}
+
 img {
   width: 200px;
+}
+
+.sentence {
+  text-align: center;
+  font-weight: 900;
+}
+
+.column {
+  border: black 1px solid;
+  text-align: center;
 }
