@@ -31,9 +31,10 @@ var newSentence = function(inputSentence) {
   return inputSentence.charAt(countLetters(inputSentence));
 };
 
-var bigSentence = newSentence(inputSentence) + inputSentence + chopSetence(inputSentence);
 
-var textToRev = newSentence(bigSentence) + bigSentence + chopSetence(bigSentence);
+
+var textToRev = newSentence(inputSentence) + inputSentence + chopSetence(inputSentence);
+alert(textToRev);
 
 function reverse(textToRev) {
     return textToRev.split("").reverse().join("");
@@ -41,8 +42,13 @@ function reverse(textToRev) {
 
 alert(reverse(textToRev));
 
+jQuery(".original").click(function() {
+  alert(inputSentence);
+});
 
-
+jQuery(".encoded").click(function() {
+  alert(textToRev);
+});
 
 
 });
